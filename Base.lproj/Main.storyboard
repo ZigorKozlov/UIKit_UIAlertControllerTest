@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OlF-HV-kTo">
-                                <rect key="frame" x="87" y="433.5" width="240" height="45.5"/>
+                                <rect key="frame" x="87" y="433.5" width="240" height="44.5"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Ha"/>
                                 <constraints>
@@ -24,10 +24,10 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="tornado" catalog="system">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Tag it">
+                                        <fragment content="Tag it(Allert)">
                                             <attributes>
                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" metaFont="system" size="41"/>
+                                                <font key="NSFont" metaFont="system" size="40"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -56,14 +56,32 @@
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="shadowOffset" width="2" height="0.0"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QsR-zg-7zG">
+                                <rect key="frame" x="50" y="566" width="315" height="60"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="N26-3l-paV"/>
+                                    <constraint firstAttribute="height" constant="60" id="ztQ-B2-2oE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Tag it(actionSheet)">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionSheetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM7-7g-lLx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QsR-zg-7zG" secondAttribute="trailing" constant="49" id="4p4-VT-cEh"/>
                             <constraint firstItem="T1K-CS-55w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="963-cL-dpo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1K-CS-55w" secondAttribute="trailing" constant="27" id="9bJ-19-e4V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OlF-HV-kTo" secondAttribute="bottom" constant="383" id="AR5-Ua-akU"/>
                             <constraint firstItem="T1K-CS-55w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="DvE-db-6Wm"/>
+                            <constraint firstItem="QsR-zg-7zG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Ekq-Gg-4QY"/>
                             <constraint firstItem="OlF-HV-kTo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="OqK-q9-kbb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QsR-zg-7zG" secondAttribute="bottom" constant="236" id="QG5-0z-urH"/>
+                            <constraint firstItem="QsR-zg-7zG" firstAttribute="top" secondItem="OlF-HV-kTo" secondAttribute="bottom" constant="88" id="SoX-aP-Ica"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OlF-HV-kTo" secondAttribute="trailing" constant="87" id="bUk-Uz-Blc"/>
                             <constraint firstItem="OlF-HV-kTo" firstAttribute="top" secondItem="T1K-CS-55w" secondAttribute="bottom" constant="311" id="wdT-mL-g6V"/>
                         </constraints>

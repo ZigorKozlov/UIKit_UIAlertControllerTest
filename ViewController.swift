@@ -36,5 +36,29 @@ class ViewController: UIViewController {
         
         self.present(myAlert, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func actionSheetButton(_ sender: Any) {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let action1 = UIAlertAction(title: "To do first task", style: .default) { (_) in
+            print("1 task is completed")
+        }
+        
+        let action2 = UIAlertAction(title: "To do second task", style: .default) { (_) in
+            print("2 task is comleted")
+        }
+        
+        alert.addAction(action1)
+        alert.addAction(action2 )
+        
+        let action3 = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
+            print("Cancele action sheet")
+        }
+        
+        alert.addAction(action3)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
